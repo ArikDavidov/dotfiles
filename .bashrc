@@ -121,6 +121,8 @@ fi
 # alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 # dot config --local status.showUntrackedFiles no
 
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
