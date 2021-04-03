@@ -116,6 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# curl -Ls https://gist.githubusercontent.com/ArikDavidov/969a279852cb9e387831a42f67a02b48/raw/381359cd8a2dc175720a8af79ee309f692f60628/dotfiles_install.sh
+# git clone --bare git@bitbucket.org:ArikDavidov/dotfiles.git $HOME/.dotfiles
+# alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+# dot config --local status.showUntrackedFiles no
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -131,8 +136,6 @@ FZF_DEFAULT_OPTS="--reverse"
 FORGIT_COPY_CMD='xclip -selection clipboard'
 source $HOME/forgit/forgit.plugin.sh
 
-# alias dot=git --git-dir=$HOME/.dotfiles --work-tree=$HOME
-# dot config --local status.showUntrackedFiles no
 
 # git config --global alias.co checkout
 # git config --global alias.br branch
@@ -141,8 +144,6 @@ source $HOME/forgit/forgit.plugin.sh
 
 # git config --global alias.cm 'commit -m'
 # git config --global help.autocorrect 20
-
-
 
 
 
